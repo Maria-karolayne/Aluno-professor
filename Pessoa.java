@@ -4,10 +4,19 @@ public class Pessoa{
     private int dataNascimento;
     private int cpf;
     private String endereco;
+
+    public Pessoa() {} 
+
+    public Pessoa(String nome, int dataNascimento, int cpf, String endereco) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
     
 
     public void Falar(){
-        System.out.println("eu falo");
+        System.out.println("A pessoa fala");
     }
 
     public String getNome (){
